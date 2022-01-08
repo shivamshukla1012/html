@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+#ss1
+{
+background:
+
+}
+</style>
+<script>
+function bind()
+{
+a=["shivam","gupta","ritik","salim"]
+c=["green","pink","yellow","blue"]
+d=["orange","black","white","gray"]
+b=document.getElementById('sh1');
+res="";
+for(i=0;i<a.length;i++)
+{
+res+="<option style='color:"+d[i]+";background:"+c[i]+";'>"+a[i]+"</option>"
+}
+document.getElementById('sh1').innerHTML=res;
+}
+
+</script>
+</head>
+<body>
+<select id="sh1"></select>
+<button onclick="bind()">bind</button>
+</body>
+</html>

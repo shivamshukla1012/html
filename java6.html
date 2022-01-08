@@ -1,0 +1,45 @@
+<html>
+<head>
+<script>
+function  swap()
+{
+ a=document.getElementById('img1')
+ b=document.getElementById('img2')
+ c=document.getElementById('img3')
+ d=document.getElementById('img4')
+ e=document.getElementById('img5')
+ f=document.getElementById('img6')
+ srcpathimg1=a.src;
+ srcpathimg2=b.src;
+ srcpathimg3=c.src;
+ srcpathimg4=d.src;
+ srcpathimg5=e.src;
+ srcpathimg6=f.src;
+a.src= srcpathimg1;
+b.src= srcpathimg2;
+c.src= srcpathimg3;
+d.src= srcpathimg4;
+e.src= srcpathimg5;
+f.src= srcpathimg6;
+}
+function start()
+{
+z=setInterval("swap()",200);
+}
+function stop()
+{
+z=clearInterval(z);
+}
+</script>
+</head>
+<body>
+<img src="insta1.png" id="img1" height="100px" width="200px">
+<img src="red.png" id="img2" height="100px" width="200px">
+<img src="tajj.png" id="img3" height="100px" width="200px">
+<img src="phone.png" id="img4" height="100px" width="200px">
+<img src="you.png" id="img5" height="100px" width="200px">
+<img src="wht1.png" id="img6" height="100px" width="200px">
+<button onclick="start()">swap start</button>
+<button onclick="stop()">swap stop</button>
+</body>
+</html>

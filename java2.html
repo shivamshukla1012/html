@@ -1,0 +1,50 @@
+<html>
+<head>
+<script>
+function add()
+{
+var a=parseInt(document.getElementById('txt1').value);
+var b=parseInt(document.getElementById('txt2').value);
+document.getElementById('txt3').value=(a+b)
+
+}
+function multipleply()
+{
+var a=parseInt(document.getElementById('txt1').value);
+var b=parseInt(document.getElementById('txt2').value);
+document.getElementById('txt3').value=(a*b)
+}
+function subtruct()
+{
+var a=parseInt(document.getElementById('txt1').value);
+var b=parseInt(document.getElementById('txt2').value);
+document.getElementById('txt3').value=(a-b)
+}
+function devison()
+{
+var a=parseInt(document.getElementById('txt1').value);
+var b=parseInt(document.getElementById('txt2').value);
+document.getElementById('txt3').value=(a/b)
+
+}
+function percentage()
+{
+var a=parseInt(document.getElementById('txt1').value);
+var b=parseInt(document.getElementById('txt2').value);
+document.getElementById('txt3').value=(a%b)
+
+}
+
+</script>
+</head>
+<input type="text" id="txt1" placeholder="please input first number"/></br>
+<input type="text" id="txt2" placeholder="please input second number"/></br>
+<input type="text" id="txt3" placeholder="value"/></br>
+<button onclick='add()'>add</button>
+<button onclick='multipleply()'>multipleply</button>
+<button onclick='subtruct()'>subtruct</button>
+<button onclick='devison()'>devison</button>
+<button onclick='percentage()'>percentage</button>
+<body>
+</body>
+</html>

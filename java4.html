@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function change()
+{
+var a=document.getElementById('img1');
+alert(a.getAttribute("src"));
+a.setAttribute("src","ind.png");
+a.setAttribute("height","200px")
+a.setAttribute("width","200px");
+window.print();
+//window.location.reload(true);
+
+}
+</script>
+</head>
+</body>
+<img src="insta.png" id="img1" class="img-shukla"/>
+<button onclick="change()">change</button>
+<button onclick="prints()">print</button>
+</body>
+</html>

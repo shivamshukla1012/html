@@ -1,0 +1,76 @@
+<html>
+<head>
+<style>
+.n{
+height:150px;
+width:150px;
+float:left;
+}
+#a{
+background:red;
+}
+#b{
+background:green;
+}
+#c{
+background:yellow;
+}
+#d{
+background:navy;
+}
+#e{
+background:aqua;
+}
+#f{
+background:blue;
+}
+#g{
+background:pink;
+}
+</style>
+</head>
+<body>
+<div class="n" id="a"></div>
+<div class="n" id="b"></div>
+<div class="n" id="c"></div>
+<div class="n" id="d"></div>
+<div class="n" id="e"></div>
+<div class="n" id="f"></div>
+<div class="n" id="g"></div>
+<button onclick="start()">start</button>
+<button onclick="stop()">stop</button>
+</body>
+</html>
+<script>
+function change()
+{
+ var img1=document.getElementById('a');
+ var img2=document.getElementById('b');
+ var img3=document.getElementById('c');
+ var img4=document.getElementById('d');
+ var img5=document.getElementById('e');
+ var img6=document.getElementById('f');
+ var img7=document.getElementById('g');
+var a1=img1.id; 
+var a2=img2.id; 
+var a3=img3.id; 
+var a4=img4.id; 
+var a5=img5.id; 
+var a6=img6.id;  
+var a7=img7.id; 
+img1.id=a2; 
+img2.id=a3; 
+img3.id=a4; 
+img4.id=a5; 
+img5.id=a6; 
+img6.id=a7; 
+img7.id=a1; 
+}
+function start(){
+z=setInterval("change()",100);
+}
+function stop(){
+z=clearInterval(z);
+}
+
+</script>

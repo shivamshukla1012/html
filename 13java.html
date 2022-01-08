@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function check()
+{
+c=document.getElementById('sp1');
+d=document.getElementById('sp2');
+var a=document.getElementById('txt1').value;
+alert(a.toUpperCase());
+c.innerHTML=a.toUpperCase();
+d.innerHTML=a.toLowerCase();
+}
+</script>
+</head>
+<body>
+<h1 id="sp1"></h1>
+<h1 id="sp2"></h1>
+<input type="text" id="txt1">
+<button onclick="check()">check</button>
+</body>
+</html>
